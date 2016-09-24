@@ -1,0 +1,11 @@
+<header>
+
+  <nav>
+    {% for a_page in site.pages %}
+      {% if a_page.title %}
+        <a href="{{ a_page.url | prepend: full_base_url }}">{{ a_page.title | escape}}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+
+</header>
