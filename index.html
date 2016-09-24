@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
@@ -9,7 +8,7 @@ layout: default
   <ul class="post-list">
     {% for a_post in site.posts %}
       <li>
-        <span>{{ a_post.date | date "%b %-d, %Y" }}</span>
+        <span>{{ a_post.date | date: "%b %-d, %Y" }}</span>
         <h2>
           <a href="{{ a_post.url | prepend: full_base_url }}">{{ a_post.title | escape }}</a>
         </h2>
