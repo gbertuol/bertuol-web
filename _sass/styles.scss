@@ -155,3 +155,36 @@ li {
   margin-right: 5px;
   @extend %clearfix;
 }
+
+.p-article {
+  // empty
+}
+
+.p-article-header {
+  font-size: 20px;
+}
+
+.p-posts-heading {
+  font-size: 20px;
+}
+
+.p-post-list {
+  margin-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-a-post {
+  //empty
+}
+
+.p-a-post-meta {
+  font-size: $small-font-size;
+  color: $gray-color;
+}
+
+.p-a-post-link {
+  display: block;
+  font-size: 24px;
+}
