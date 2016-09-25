@@ -145,12 +145,12 @@ li {
 }
 
 .s-footer-title {
-  font-size: 18px;
+  font-size: 14px;
   margin-left: 5px;
 }
 
 .s-footer-description {
-  font-size: 15px;
+  font-size: 10px;
   color: $gray-color;
   margin-right: 5px;
   @extend %clearfix;
@@ -176,12 +176,19 @@ li {
 }
 
 .p-a-post {
-  //empty
+  display: flex;
+  flex-direction: column;
+}
+
+.p-a-post-preview {
+  align-self: flex-start;
+  // empty
 }
 
 .p-a-post-meta {
   font-size: $small-font-size;
   color: $gray-color;
+  align-self: flex-end;
 }
 
 .p-a-post-link {
