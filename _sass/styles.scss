@@ -156,12 +156,14 @@ li {
   @extend %clearfix;
 }
 
-.p-article {
-  // empty
+// Index page
+.p-index {
+  display: flex;
 }
 
-.p-article-header {
-  font-size: 20px;
+// posts
+.p-posts {
+  flex: 1 75%;
 }
 
 .p-posts-heading {
@@ -182,7 +184,6 @@ li {
 
 .p-a-post-preview {
   align-self: flex-start;
-  // empty
 }
 
 .p-a-post-meta {
@@ -194,4 +195,23 @@ li {
 .p-a-post-link {
   display: block;
   font-size: 24px;
+}
+
+// aside
+.p-aside {
+  border-left: 1px solid $gray-color-light;
+  flex: 1 25%;
+}
+
+.p-aside-title {
+  font-size: 20px;
+}
+
+.p-aside-list {
+  list-style: none;
+}
+
+.p-aside-link {
+  display: block;
+  font-size: $small-font-size;
 }

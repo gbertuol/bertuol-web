@@ -1,0 +1,12 @@
+<aside class="p-aside s-container">
+  <p class="p-aside-title">All posts</p>
+  <ul class="p-aside-list">
+    {% for a_post in site.posts %}
+    <li class="p-aside-item">
+      <h2>
+        <a class="p-aside-link" href="{{ a_post.url | prepend: full_base_url }}">{{ a_post.title | escape }}</a>
+      </h2>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>
