@@ -99,11 +99,10 @@ li {
   border-bottom: 1px solid $gray-color-light;
   min-height: 56px;
   display: flex;
-  justify-content: space-between;
-  align-content: stretch;
 }
 
 .s-title {
+  flex: 1 auto;
   font-size: 26px;
   font-weight: 300;
   line-height: 56px;
@@ -120,6 +119,7 @@ li {
 .s-nav {
   line-height: 56px;
   align-items: center;
+  flex: 0 auto;
   display: flex;
 
   .s-nav-page-link {
@@ -138,21 +138,21 @@ li {
 
 .s-footer {
   border-top: 1px solid $gray-color-light;
-  padding: $spacing-unit 0;
   display: flex;
-  justify-content: space-between;
   align-content: stretch;
 }
 
 .s-footer-title {
   font-size: 14px;
   margin-left: 5px;
+  flex: 1 auto;
 }
 
 .s-footer-description {
   font-size: 10px;
   color: $gray-color;
   margin-right: 5px;
+  flex: 0 auto;
   @extend %clearfix;
 }
 
@@ -200,6 +200,7 @@ li {
 // aside
 .p-aside {
   border-left: 1px solid $gray-color-light;
+  padding-left: $spacing-unit / 2;
   flex: 1 25%;
 }
 
